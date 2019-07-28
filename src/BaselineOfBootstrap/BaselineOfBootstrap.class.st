@@ -4,7 +4,7 @@ The BaselineOf for Seaside Bootstrap for Pharo
 Class {
 	#name : #BaselineOfBootstrap,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfBootstrap'
+	#category : #BaselineOfBootstrap
 }
 
 { #category : #baselines }
@@ -27,8 +27,7 @@ BaselineOfBootstrap >> baseline: spec [
 BaselineOfBootstrap >> bootstrap: spec [
 
 	spec 
-			package: 'Bootstrap-Core' with: [
-				spec requires: #('Seaside3' ). ];
+			package: 'Bootstrap-Core'; "Requires Seaside3 to be loaded"
 			package: 'Bootstrap-Widgets' with: [
 				spec requires: #('Bootstrap-Core' ). ];
 			package: 'Bootstrap-Tests-Core' with: [
