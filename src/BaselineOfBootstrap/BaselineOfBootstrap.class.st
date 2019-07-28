@@ -11,16 +11,8 @@ Class {
 BaselineOfBootstrap >> baseline: spec [
 	<baseline>
 	
-	spec for: #'pharo6.x' do: [	
-		spec preLoadDoIt: #preLoad61.
-		self 
-			seaside3: spec;
-		  	bootstrap: spec ].
-	
 	spec for: #'common' do: [	
-		self 
-			seaside3: spec;
-		  	bootstrap: spec ]
+		self bootstrap: spec ]
 ]
 
 { #category : #baselines }
