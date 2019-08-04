@@ -39,19 +39,3 @@ BaselineOfBootstrap >> bootstrap: spec [
 			group: 'Jasny' with: #('Bootstrap-Jasny' );
 			group: 'default' with: #('Core' 'Widgets' 'Jasny' 'Tests' 'Examples' ) 
 ]
-
-{ #category : #baselines }
-BaselineOfBootstrap >> preLoad61 [
-
-	Iceberg enableMetacelloIntegration: true.
-	IceMetacelloPharoPlatform select.
-]
-
-{ #category : #'private - subspecs' }
-BaselineOfBootstrap >> seaside3: spec [
-	spec
-		baseline: 'Seaside3'
-		with: [ spec
-				loads: #('default' 'REST');
-				repository: 'github://SeasideSt/Seaside:master/repository' ]
-]
